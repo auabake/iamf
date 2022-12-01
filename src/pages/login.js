@@ -5,8 +5,8 @@ import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import { Box, Button, Container, Grid, Link, TextField, Typography } from '@mui/material';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
-import { Facebook as FacebookIcon } from '../icons/facebook';
-import { Google as GoogleIcon } from '../icons/google';
+// import { Facebook as FacebookIcon } from '../icons/facebook';
+// import { Google as GoogleIcon } from '../icons/google';
 
 const Login = () => {
   const formik = useFormik({
@@ -71,14 +71,14 @@ const Login = () => {
                 gutterBottom
                 variant="body2"
               >
-                Sign in on the internal platform
+                Enter Email and Password to Sign In
               </Typography>
             </Box>
             <Grid
               container
               spacing={3}
             >
-              <Grid
+              {/* <Grid
                 item
                 xs={12}
                 md={6}
@@ -109,9 +109,9 @@ const Login = () => {
                 >
                   Login with Google
                 </Button>
-              </Grid>
+              </Grid> */}
             </Grid>
-            <Box
+            {/* <Box
               sx={{
                 pb: 1,
                 pt: 3
@@ -124,7 +124,7 @@ const Login = () => {
               >
                 or login with email address
               </Typography>
-            </Box>
+            </Box> */}
             <TextField
               error={Boolean(formik.touched.email && formik.errors.email)}
               fullWidth
@@ -167,9 +167,9 @@ const Login = () => {
               color="textSecondary"
               variant="body2"
             >
-              Don&apos;t have an account?
+              Don&apos;t have an account ? Get In touch with IT the Manager to Create your Account
               {' '}
-              <NextLink
+              {/* <NextLink
                 href="/register"
               >
                 <Link
@@ -182,7 +182,7 @@ const Login = () => {
                 >
                   Sign Up
                 </Link>
-              </NextLink>
+              </NextLink> */}
             </Typography>
           </form>
         </Container>
